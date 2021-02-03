@@ -1,0 +1,388 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Reset end */
+
+:root {
+	--primary: #fff;
+	--secondary: #000;
+}
+
+html {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  background-color: #ebebeb;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+    padding: 1em 10vw;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 3em;
+}
+
+main {
+    margin: 0 10vw 4em 10vw;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 0 0 1em 0;
+}
+  
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+a:hover {
+    color: tomato;
+}
+
+.author {
+  margin-top: 1em;
+  font-size: 0.75em;
+  font-style: italic;
+  color: #666;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 2em;
+  background-color: #fff;
+}
+
+.section + .section {
+  margin-top: 4em;
+}
+
+.experiment {
+  display: inline-flex;
+}
+
+/* Styles Clip-path */
+.yosemite {
+  width: 250px;
+  height: 200px;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  transition: 0.5s;
+  animation: 2s ease infinite arrowChange;
+}
+
+.yosemite:nth-last-child() {
+  
+}
+
+@keyframes arrowChange {
+  0% { clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); }
+  50% { clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); }
+  100% { clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); }
+}
+
+/* Styles Blend-mode */
+
+.blend-difference {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 120px 120px 0;
+  background-color: rgba(255, 99, 71, 1);
+}
+
+.blend-difference::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 20px;
+  left: 40px;
+  background-color: rgba(30, 144, 255, 1);
+  mix-blend-mode: darken;
+}
+
+.blend-difference::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: -40px;
+  left: 20px;
+  background-color: rgba(16, 167, 74, 1);
+  mix-blend-mode: color-dodge;
+}
+
+.blend-overlay {
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+.blend-overlay-text {
+  position: absolute;
+  top: -.5em;
+  left: .5em;
+  font-size: 4em;
+  font-weight: 600;
+  color: #fff;
+  mix-blend-mode: exclusion;
+  z-index: 3;
+}
+
+.blend-overlay-img-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.blend-overlay-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blend-overlay-img-wrapper:nth-child(2) {
+  mix-blend-mode: overlay;
+  z-index: 2;
+}
+
+.blend-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    background-image: url(http://static.hva.nl/binaries/normalpagebanner/content/gallery/subsites/amstelcampus/amstelcampus-overview/ff66861-klein-juiste-pixels.jpg) ;
+    background-size: cover;
+}
+
+.blend-wrapper h1 {
+    color: rgb(85, 49, 248);
+    /* margin: 0 auto; */
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.blend-wrapper h1 span:nth-child(1){
+    mix-blend-mode: darken;
+}
+
+.blend-wrapper h1 span:nth-child(2){
+    mix-blend-mode: color-dodge;
+}
+
+.blend-wrapper h1 span:nth-child(3){
+    mix-blend-mode: hard-light;
+}
+
+/* Styles CSS-filters */
+
+.mozillalogo {
+  width: 150px;
+  height: 150px;
+  margin: 0 2em;
+}
+
+.mozillalogo:nth-child(2) {
+  filter: hue-rotate(90deg);
+}
+
+.mozillalogo:nth-child(3) {
+  animation: 3s ease infinite mozillahueanimation;
+}
+
+.mozillalogo:nth-child(4) {
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+
+.mozillalogo:nth-child(5) {
+  animation: 3s ease infinite mozillainvertanimation;
+}
+
+@keyframes mozillahueanimation {
+  0% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(90deg); }
+  100% { filter: hue-rotate(0deg); }
+}
+
+@keyframes mozillainvertanimation {
+  0% { filter: drop-shadow(0px 0px 0px red) invert(0%); }
+  50% { filter: drop-shadow(16px 16px 20px red) invert(75%); }
+  100% { filter: drop-shadow(0px 0px 0px red) invert(0%); }
+}
+
+/* Styles Gradients */
+
+.animated-gradient {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(200deg, #db9b18, #416887, #ff0000, #f9ff00, #7600ff) 0% 0% / 500% 500%;
+  animation: 10s ease infinite gradientAnimation;
+}
+
+.gradient-ring {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: linear-gradient(45deg, blue, purple, red, orange, darkgreen, yellow) 0% / 200%;
+  border-radius: 50%;
+  animation: 1s linear infinite rotateAnimation;
+}
+
+.gradient-ring::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border-radius: 50%;
+  animation: 2s ease-in-out infinite scaleAnimation;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 80% }
+  50% { background-position: 100% 10% }
+  100% { background-position: 0% 80% }
+}
+
+@keyframes rotateAnimation {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Styles Gradient patterns */
+
+.flexwrapper {
+    display: flex;
+    flex-direction: row;
+} 
+
+.flexwrapper:not:first-child {
+    margin: 0 0 2rem;
+}
+
+.pattern-one {
+    width: 20rem;
+    height: 20rem;
+    background:
+    linear-gradient(-45deg, blue 25%, transparent 25%, transparent 75%, orange 75%, orange) 0 0,
+    linear-gradient(-45deg, orange 25%, transparent 25%, transparent 75%, blue 75%, blue) 1em 1em,
+    linear-gradient(45deg, orange 17%, transparent 17%, transparent 25%, orange 25%, orange 36%, transparent 36%, transparent 64%, orange 64%, orange 75%, transparent 75%, transparent 83%, orange 83%) 1em 1em;
+    background-color: blue;
+}
+
+.pattern-one {
+    animation: 4s ease-in-out infinite zoomAnimation;
+}
+
+@keyframes zoomAnimation {
+    0% { background-size: 0.5em 0.5em }
+    50% { background-size: 3em 3em }
+    75% { background-size: 4.5em 4.5em }
+    100% { background-size: 0.5em 0.5em }
+}
+
+.pattern-two {
+    position: relative;
+    margin: 0 2rem;
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    
+}
+
+.pattern-two::before {
+    content: "";
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    top: -50%; 
+    left: -50%;  
+    right: 0%;
+    background:
+    radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,
+    linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,
+    linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,
+    linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+    background-size: 40px 60px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    animation: 10s linear infinite rotateAnimation;
+}
