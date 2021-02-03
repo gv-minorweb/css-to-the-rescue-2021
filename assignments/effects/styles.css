@@ -108,7 +108,7 @@ img {
   background-color: #fff;
 }
 
-.section + .section {
+.section {
   margin-top: 4em;
 }
 
@@ -119,20 +119,50 @@ img {
 /* Styles Clip-path */
 .yosemite {
   width: 250px;
-  height: 200px;
-  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  height: 250px;
   transition: 0.5s;
+}
+
+.yosemite-1 {
   animation: 2s ease infinite arrowChange;
 }
 
-.yosemite:nth-last-child() {
-  
+.yosemite-2 {
+  clip-path: ellipse(4% 4% at 54% 66%);
+  transition: 0.4s cubic-bezier(1, 0, 0, 2);
+}
+
+.yosemite-2:hover {  
+  clip-path: ellipse(40% 40% at 50% 50%);
 }
 
 @keyframes arrowChange {
   0% { clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); }
   50% { clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); }
   100% { clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); }
+}
+
+@keyframes coinFlip {
+  0% { clip-path: ellipse(0% 50% at 50% 50%); }
+  50% { clip-path: ellipse(50% 50% at 50% 50%); }
+  100% { clip-path: ellipse(0% 50% at 50% 50%); }
+}
+
+.rick {
+  width: 250px;
+  height: 250px;
+  animation: 2.5s ease infinite coinFlip;
+}
+
+.grogu {
+  width: 20%;
+  height: auto;
+  clip-path: polygon(57% 17%, 0 46%, 1% 81%, 56% 38%, 36% 100%, 17% 0, 0 15%, 100% 93%, 0 29%, 57% 0, 0 81%, 28% 100%, 0 24%, 76% 99%);
+  transition: 1s ease-in-out;
+}
+
+.grogu:hover {
+  clip-path: polygon(100% 100%, 100% 76%, 100% 42%, 100% 0, 33% 0, 0 0, 0 32%, 0% 53%, 0% 78%, 0 87%, 0 100%, 28% 100%, 49% 100%, 65% 100%);
 }
 
 /* Styles Blend-mode */
@@ -209,28 +239,52 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     background-image: url(http://static.hva.nl/binaries/normalpagebanner/content/gallery/subsites/amstelcampus/amstelcampus-overview/ff66861-klein-juiste-pixels.jpg) ;
     background-size: cover;
 }
 
 .blend-wrapper h1 {
-    color: rgb(85, 49, 248);
-    /* margin: 0 auto; */
-    font-size: 7rem;
+    color: #24147B;
+    padding: 0 3rem;
+    font-size: 8rem;
     font-weight: bold;
 }
 
-.blend-wrapper h1 span:nth-child(1){
-    mix-blend-mode: darken;
+.blend-wrapper h1 span:nth-child(1) {
+  animation: 3s ease-in-out infinite blendModeOne;
 }
 
 .blend-wrapper h1 span:nth-child(2){
-    mix-blend-mode: color-dodge;
+  animation: 3s ease-in-out infinite blendModeTwo;
 }
 
 .blend-wrapper h1 span:nth-child(3){
-    mix-blend-mode: hard-light;
+    animation: 3s ease-in-out infinite blendModeThree;
+}
+
+@keyframes blendModeOne {
+  0% { mix-blend-mode: screen; }
+  25% { mix-blend-mode: color-dodge; }
+  50% { mix-blend-mode: exclusion; }
+  75% { mix-blend-mode: darken; }
+  100% { mix-blend-mode: color-burn; }
+}
+
+@keyframes blendModeTwo {
+  0% { mix-blend-mode: color-burn; }
+  25% { mix-blend-mode: screen; }
+  50% { mix-blend-mode: color-dodge; }
+  75% { mix-blend-mode: exclusion; }
+  100% { mix-blend-mode: darken; }
+}
+
+@keyframes blendModeThree {
+  0% { mix-blend-mode: darken; }
+  25% { mix-blend-mode: color-burn; }
+  50% { mix-blend-mode: screen; }
+  75% { mix-blend-mode: color-dodge; }
+  100% { mix-blend-mode: exclusion; }
 }
 
 /* Styles CSS-filters */
@@ -323,6 +377,12 @@ img {
   }
 }
 
+.gradient-wrapper {
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(circle, rgba(255,255,255,0) 62%, rgba(0,0,0,1) 90%);
+} 
+
 /* Styles Gradient patterns */
 
 .flexwrapper {
@@ -361,7 +421,6 @@ img {
     width: 20rem;
     height: 20rem;
     overflow: hidden;
-    
 }
 
 .pattern-two::before {
