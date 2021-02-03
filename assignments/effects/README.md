@@ -1,0 +1,1 @@
+This directory contains random css effects by [JimmydeKroon](https://github.com/JimmydeKroon), [roelandvs](https://github.com/roelandvs), [mbergevoet](https://github.com/mbergevoet) and [gv-minorweb](https://github.com/gv-minorweb/).
