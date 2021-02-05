@@ -23,9 +23,9 @@ Naast de print context die ik meeneem in mijn ontwerpbeslissingen probeer ik ook
 
 ### Week 1
 
-In de eerste week doe ik vooral inspiratie op om een idee te krijgen van de richting waar ik met het artikel heen wil gaan. Ik wil extra aandacht aan de typografie besteden en ik maak een collectie van verschillende lettertypes die interessant om in te zetten.
+In de eerste week doe ik vooral inspiratie op om een idee te krijgen van de richting waar ik met het artikel heen wil gaan. Ik wil extra aandacht aan de typografie besteden en ik maak een collectie van verschillende lettertypes die interessant om in te zetten. Overigens lijkt het me ook tof om Variable fonts te gebruiken (mits ik een passend lettertype tegenkom die een variable versie heeft), zodat ik bijvoorbeeld de font weights vloeiend kan animeren.
 
-Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) inzetten.
+Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) inzetten en het lijkt me enorm interessant om veel te experimenteren met [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path).
 
 #### Interessante lettertypes
 
@@ -38,3 +38,13 @@ Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer
 **Premium:**  
 [Telegraf](https://pangrampangram.com/products/telegraf?variant=32840640167990) (sans-serif, headings/body)  
 [Migra](https://pangrampangram.com/products/migra) (serif, headings/body)
+
+--
+
+Interessant uitdaging, zonder de HTML aan te passen alle letters van de titel op elkaar stapelen:
+
+![](notes/sketch-1.jpg)
+
+Of dezelfde tekst puur met CSS meerdere keren op de pagina plaatsen op een stijlistische manier:
+
+![](notes/sketch-2.jpg)
