@@ -1,45 +1,40 @@
 # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
-Wij vinden het web fascinerend. De laatste jaren is CSS een volwassen en zeer krachtige taal geworden (niet langer een bottleneck - integendeel). Veel van de (nieuwe) **CSS-lekkernijen** worden echter nog niet ten volle benut. Sommige delen van de spec worden onterecht (nog) niet bemind, andere delen zijn zo groot en complex dat we mogelijkheden nog niet hebben doorgrond. Aan jou de  mooie opdracht om de onontgonnen delen van de CSS-wereld in kaart te brengen.
+## Zen Garden
 
-**In dit vierweekse vak ga je experimenteren met (voor jou) nieuwe CSS technieken - om daarna/mee een innovatieve, experimentele én aangename ervaring te creëren - met vanilla CSS en HTML dus (frameworks, preprocessors, libraries en JS zijn niet toegestaan - nou vooruit een beetje JS).**
+[CSS Zen Garden](http://www.csszengarden.com/) was 20 jaar geleden een initiatief om mogelijkheden van CSS te exploreren: hoe kun je CSS inzetten om vaststaande HTML om te toveren tot toen een visueel meesterwerk. Aan jou dezelfde taak, maar dan anno nu.
 
-Nb. Het experiment wordt gewaardeerd - zelfs/zeker als het niet (helemaal) lukt. Voel je vrij om verder te gaan dan de CSS-technieken die je al beheertst.
+In dit project geef ik een artikel vorm met alléén CSS, [het HTML bestand](zengarden/index.html) wordt niet aangepast.
 
-## Dingen om vooraf te doen
-- 🔱 **Fork** deze repository
-- ✅ [**Enroll** je voor de minor via de courselector](https://icthva.sharepoint.com/sites/courseselector#/CourseSelector/web-design-and-development/2020-2021) (dan kun je je werk straks ook op [DLO](https://dlo.mijnhva.nl/d2l/home/275640) opleveren)
-- 🎥 **Camera's aan** tijdens lessen en co (zorg dat je webcam werkt)
-- 📒 **Bekijk** het programma en de kennismakingsoefening alvast even
+### Context
 
-## Opdrachten
-Het vak bestaat uit:
-- [Een kennismakingsoefening](https://cmda-minor-web.github.io/css-to-the-rescue-2021/oefening.html)
-- [De eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2021/index.html)
+Naast de vormgeving voor in de browser, hou ik rekening met de vormgeving bij het printen van de pagina, oftewel, flink los gaan in de browser, maar er voor zorgen dat alles wel netjes en leesbaar geprint kan worden.
 
-De [beoordelingscriteria voor de eindopdracht](https://cmda-minor-web.github.io/css-to-the-rescue-2021/beoordelingsformulier.html) op een rijte.
+### Eisen
 
-## Programma
-Het vak beslaat 4 weken. Bekijk de presentatie met alle details [soon]. 
+Naast de print context die ik meeneem in mijn ontwerpbeslissingen probeer ik ook aan de volgende eisen te voldoen:
 
-In Teams vind je de [Excel met de indeling en planning](https://teams.microsoft.com/l/file/6E37FED4-91C7-4293-A7C4-C0309D24634D?tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7&fileType=xlsx&objectUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt%2FShared%20Documents%2F03%20-%20CSS%20to%20the%20Rescue%2FCSS%20to%20the%20rescue%20-%20Indeling%20%26%20Planning.xlsx&baseUrl=https%3A%2F%2Ficthva.sharepoint.com%2Fsites%2FFDMCI_EDU__CMD20_21_Minor_Web_5i7j73jt&serviceName=teams&threadId=19:84bbb4a3b90d40a6b434649359689744@thread.tacv2&groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3). 
-Daar schrijf je je ook in voor themasessies en het eindgesprek.
+- [ ] SVG toepassen in shapes, masks én filters
+- [ ] Voldoen aan Level AAA van de WCAG.
 
-Colleges, lessen en gesprekken vinden plaats [in Teams](https://teams.microsoft.com/l/channel/19%3a84bbb4a3b90d40a6b434649359689744%40thread.tacv2/03%2520-%2520CSS%2520to%2520the%2520Rescue?groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3&tenantId=0907bb1e-21fc-476f-8843-02d09ceb59a7).
+---
 
-## Docenten
-- Vasilis van Gemert
-- Sanne 't Hooft
+## Plan
 
-## Learning goals
-- _You understand the broader scope of CSS: You can show that CSS can be used for more than just styling web pages._
-- ~~_You understand the progressive enhancement parts of CSS: You can show that you can use the cascade, inheritance and specificity in your project_~~
-- _You understand the interactive parts of CSS: Is the UX fully enhanced within in given CSS scope?_
-- _You have been experimenting: Have the learning goals been stretched?_
+### Week 1
 
-[](https://docs.google.com/spreadsheets/d/1Xv48MSiACNmnM6nXpGGUb8mJDC459uSaxJszO_zLEp8/edit?usp=sharing)
+In de eerste week doe ik vooral inspiratie op om een idee te krijgen van de richting waar ik met het artikel heen wil gaan. Ik wil extra aandacht aan de typografie besteden en ik maak een collectie van verschillende lettertypes die interessant om in te zetten.
 
-## De Selector First CSS & No JS aanpak
-Het **eerste uitgangspunt** is dat je *geen* ID's en classes gebruikt. Niet omdat ze niet nuttig zijn, maar om te oefenen met de [vele CSS selectoren](https://css-tricks.com/almanac/) die je tot je beschikking hebt. ID's mag je alleen gebruiken om de :target selector te triggeren. En als het echt echt echt niet anders kan, heb je permissie om een paar classes toe te voegen.
+Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) inzetten.
 
-Een **tweede uitgangspunt** is dat je *geen* JS gebruikt (i.i.g. zo min mogelijk - het vak heet niet voor niets CSS to the Rescue). Wat met CSS en/of HTML kan mag je *niet* met JS realiseren en het is *niet* toegestaan om CSS properties met JS aan te passen. We vinden het daarentegen wel interessant dat je verkent waar JS en CSS elkaar raken/versterken, bijv. het [uitlezen en aanpassen van CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), of bijv. de [animationstart](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationstart_event), [animationcancel](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationcancel_event), [animationiteration](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationiteration_event) en [animationend](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event) events gebruiken.
+#### Interessante lettertypes
+
+**Gratis:**  
+[Questrial](https://fonts.google.com/specimen/Questrial) (sans-serif, headings)  
+[Poppins](https://fonts.google.com/specimen/Poppins) (sans-serif, headings)  
+[Inter](https://fonts.google.com/specimen/Inter) (sans-serif, body)  
+[EB Garamond](https://fonts.google.com/specimen/EB+Garamond) (serif, headings/body)
+
+**Premium:**  
+[Telegraf](https://pangrampangram.com/products/telegraf?variant=32840640167990) (sans-serif, headings/body)  
+[Migra](https://pangrampangram.com/products/migra) (serif, headings/body)
