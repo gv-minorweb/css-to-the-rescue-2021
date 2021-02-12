@@ -1,5 +1,8 @@
 # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
+## Live demo
+
+
 ## Zen Garden
 
 [CSS Zen Garden](http://www.csszengarden.com/) was 20 jaar geleden een initiatief om mogelijkheden van CSS te exploreren: hoe kun je CSS inzetten om vaststaande HTML om te toveren tot toen een visueel meesterwerk. Aan jou dezelfde taak, maar dan anno nu.
@@ -19,9 +22,9 @@ Naast de print context die ik meeneem in mijn ontwerpbeslissingen probeer ik ook
 
 ---
 
-## Plan
+## Week 1
 
-### Week 1
+### Plan
 
 In de eerste week doe ik vooral inspiratie op om een idee te krijgen van de richting waar ik met het artikel heen wil gaan. Ik wil extra aandacht aan de typografie besteden en ik maak een collectie van verschillende lettertypes die interessant om in te zetten. Overigens lijkt het me ook tof om Variable fonts te gebruiken (mits ik een passend lettertype tegenkom die een variable versie heeft), zodat ik bijvoorbeeld de font weights vloeiend kan animeren.
 
@@ -41,10 +44,22 @@ Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer
 
 --
 
-Interessant uitdaging, zonder de HTML aan te passen alle letters van de titel op elkaar stapelen:
+### Schetsen
+
+<details>
+<summary>Interessant uitdaging, zonder de HTML aan te passen alle letters van de titel op elkaar stapelen:</summary>
 
 ![](notes/sketch-1.jpg)
-
-Of dezelfde tekst puur met CSS meerdere keren op de pagina plaatsen op een stijlistische manier:
+</details>
+<br>
+<details>
+<summary>Of dezelfde tekst puur met CSS meerdere keren op de pagina plaatsen op een stijlistische manier:</summary>
 
 ![](notes/sketch-2.jpg)
+</details>
+
+## Week 2
+
+![](notes/progress/top-1.png)
+
+![](notes/progress/articles-1.png)
