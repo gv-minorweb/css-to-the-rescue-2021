@@ -1,7 +1,7 @@
 # CSS to the Rescue @cmda-minor-web 2020 - 2021
 
 ## Live demo
-
+[Click here](https://gv-minorweb.github.io/css-to-the-rescue-2021/zengarden/)
 
 ## Zen Garden
 
