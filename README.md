@@ -17,8 +17,9 @@ Naast de vormgeving voor in de browser, hou ik rekening met de vormgeving bij he
 
 Naast de print context die ik meeneem in mijn ontwerpbeslissingen probeer ik ook aan de volgende eisen te voldoen:
 
-- [ ] SVG toepassen in shapes, masks én filters
-- [ ] Voldoen aan Level AAA van de WCAG.
+- [x] SVG toepassen in shapes, masks én filters
+- [x] Gebruik van maximaal 2 kleuren
+- [x] Voldoen aan Level AAA van de WCAG.
 
 ---
 
@@ -28,7 +29,7 @@ Naast de print context die ik meeneem in mijn ontwerpbeslissingen probeer ik ook
 
 In de eerste week doe ik vooral inspiratie op om een idee te krijgen van de richting waar ik met het artikel heen wil gaan. Ik wil extra aandacht aan de typografie besteden en ik maak een collectie van verschillende lettertypes die interessant om in te zetten. Overigens lijkt het me ook tof om Variable fonts te gebruiken (mits ik een passend lettertype tegenkom die een variable versie heeft), zodat ik bijvoorbeeld de font weights vloeiend kan animeren.
 
-Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) inzetten en het lijkt me enorm interessant om veel te experimenteren met [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path).
+Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) inzetten en het lijkt me interessant om te experimenteren met [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) en SVG filters.
 
 #### Interessante lettertypes
 
@@ -42,6 +43,8 @@ Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer
 [Telegraf](https://pangrampangram.com/products/telegraf?variant=32840640167990) (sans-serif, headings/body)  
 [Migra](https://pangrampangram.com/products/migra) (serif, headings/body)
 
+Ik heb gekozen voor Inter voor de body tekst en Telegraf voor de headings.
+
 --
 
 ### Schetsen
@@ -51,15 +54,43 @@ Voor de layout van het artikel zal ik hoofdzakelijk [CSS Grid](https://developer
 
 ![](notes/sketch-1.jpg)
 </details>
-<br>
+
 <details>
 <summary>Of dezelfde tekst puur met CSS meerdere keren op de pagina plaatsen op een stijlistische manier:</summary>
 
 ![](notes/sketch-2.jpg)
 </details>
 
+<br>
+
+Ik heb ervoor gekozen om concept 2 uit te werken voor de heading tekst.
+
 ## Week 2
+
+De meeste content is in het grid gepositioneerd:
 
 ![](notes/progress/top-1.png)
 
+Door slim om te gaan met pseudo selectors kan ik inline links als groot blok aanklikken:
+
 ![](notes/progress/articles-1.png)
+
+## Week 3 en 4
+
+Gewerkt aan de responsiveness, o.a. tablet, maar ook mobiele schermen.
+
+![](notes/progress/responsive-tablet.png)
+
+Animaties toegevoegd met SVG filters en clip-path (1).
+
+![](notes/progress/heading.gif)
+
+![](notes/progress/thank-you.gif)
+
+![](notes/progress/image-clip.gif)
+
+### Gebruikte bronnen
+
+- (1) [SVG Filter Effects: Creating Texture with \<feTurbulence>](https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/)
+- (2) [URL-encode for SVG](https://yoksel.github.io/url-encoder/)
+- (3) [CSS filter generator to convert from black to target hex color](https://codepen.io/sosuke/pen/Pjoqqp)

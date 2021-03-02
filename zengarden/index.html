@@ -8,6 +8,31 @@
 </head>
 <body>
 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filter">
+		<defs>
+				<filter id="vibrate-0">
+						<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"></feTurbulence>
+						<feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="3"></feDisplacementMap>
+				</filter>
+				<filter id="vibrate-1">
+						<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"></feTurbulence>
+						<feDisplacementMap in="SourceGraphic" in2="noise" scale="5"></feDisplacementMap>
+				</filter>
+				<filter id="vibrate-2">
+						<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"></feTurbulence>
+						<feDisplacementMap in="SourceGraphic" in2="noise" scale="3"></feDisplacementMap>
+				</filter>
+				<filter id="vibrate-3">
+						<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"></feTurbulence>
+						<feDisplacementMap in="SourceGraphic" in2="noise" scale="5"></feDisplacementMap>
+				</filter>
+				<filter id="vibrate-4">
+						<feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"></feTurbulence>
+						<feDisplacementMap in="SourceGraphic" in2="noise" scale="3"></feDisplacementMap>
+				</filter>
+		</defs>
+</svg>
+
 <main>
 	<h1>Add nonsense</h1>
 
