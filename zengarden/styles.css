@@ -244,8 +244,6 @@ a[href] {
 /* External links */
 main a[href*="//"]:not([href^="#"]) {
   padding: 2px 4px;
-  /* box-shadow: inset 0 -0.5em rgb(255 0 0 / 8%); */
-  /* transition: box-shadow .2s var(--easeInOutCubic); */
   transition: background-color .15s var(--easeInOutCubic), color .15s var(--easeInOutCubic);
 }
 
